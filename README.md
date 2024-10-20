@@ -1,7 +1,7 @@
-### This is the Take Home Assignment for the Role of Backend Intern at GrowthX
+### This is the Backend Intern - Assignment for the Role of Backend Intern at Convin.ai
 
 ## Objective:
-To Create an assignment submission portal.
+Daily Expense Sharing Application
 
 ### Technology Used:
 - 1.Database:
