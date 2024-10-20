@@ -50,7 +50,7 @@ Daily Expense Sharing Application
   - 1.Create User:
      - Method: POST
      - URL: `http://localhost:5000/users`
-     - Body: Select "Raw" and then "JSON" from the dropdown in the Body tab:
+     - Body(raw JSON):
        ```
        {
        "email": "abhishek123@gmail.com",
@@ -66,26 +66,47 @@ Daily Expense Sharing Application
      - Method: GET
      - URL: `http://localhost:5000/users/<user_id>`
    (Replace <user_id> with the ID returned when creating a user)--> Connect the backend-app with database(MongoDB) to get the IDs.
-       ```
-       {
-       "username": "testadmin",
-       "password": "adminpassword",
-       "user_type": "admin"
-       }
-       ```
-     - ![Screenshot 2024-10-09 214040](https://github.com/user-attachments/assets/dab0b114-344b-4f82-aaf2-14abf1a51e45)
+     - ![Screenshot 2024-10-20 195103](https://github.com/user-attachments/assets/d3ba81e1-7453-44af-add2-60cecd883448)
+
     
-   - 3.Login for (User and Admin Both):
+   - 3.Add Expense:
      - Method: POST
-     - URL: `http://localhost:8000/login`
-     - Auth:
-         - Select the "Authorization" tab.
-         - Choose "Basic Auth" from the dropdown.
-         - Enter:
-         - Username: `testuser` or `testadmin` (based on the account you want to test)
-         - Password: `testpassword` or `adminpassword` (based on the account you want to test)
-     - Login as User:![Screenshot 2024-10-09 214628](https://github.com/user-attachments/assets/d559eb64-74df-4b60-807c-f01de1b82a0b)
-     - Login as Admin:![Screenshot 2024-10-09 214758](https://github.com/user-attachments/assets/7ca6779e-0557-483e-a2f2-037df10bc2ca)
+     - URL: `http://localhost:5000/expenses`
+     - a.For Equal Split: 
+       ```
+         {
+       "amount": 3000,
+       "description": "Dinner",
+       "payer_id": "<user_id>",
+       "split_method": "equal",
+       "splits": [
+           {"user_id": "<user_id1>"},
+           {"user_id": "<user_id2>"},
+           {"user_id": "<user_id3>"}
+       ]
+      }
+       ```
+   -![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/5cbe945b-4947-4135-bf9b-f88f81d8d61d)
+  
+   - b.For Exact Split
+       ```
+            {
+       "amount": 4299,
+       "description": "Shopping",
+       "payer_id": "<user_id>",
+       "split_method": "exact",
+       "splits": [
+           {"user_id": "<user_id1>", "amount": 799},
+           {"user_id": "<user_id2>", "amount": 2000},
+           {"user_id": "<user_id3>", "amount": 1500}
+       ]
+   }
+       ```
+  - ![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/cb740cd3-e606-405c-8dec-4515686a77f2)
+
+  
+
+   
  
    - 4.Upload an Assignment (as a user):
      - Method: POST
