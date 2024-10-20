@@ -65,14 +65,14 @@ Daily Expense Sharing Application
    - 2.Retrieve User Details:
      - Method: GET
      - URL: `http://localhost:5000/users/<user_id>`
-   (Replace <user_id> with the ID returned when creating a user)--> Connect the backend-app with database(MongoDB) to get the IDs.
+      (Replace <user_id> with the ID returned when creating a user)--> Connect the backend-app with database(MongoDB) to get the IDs.
      - ![Screenshot 2024-10-20 195103](https://github.com/user-attachments/assets/d3ba81e1-7453-44af-add2-60cecd883448)
 
     
    - 3.Add Expense:
      - Method: POST
      - URL: `http://localhost:5000/expenses`
-     - a.For Equal Split: 
+     - a. For Equal Split: 
        ```
             {
        "amount": 3000,
@@ -86,9 +86,9 @@ Daily Expense Sharing Application
        ]
    }
        ```
-   -![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/5cbe945b-4947-4135-bf9b-f88f81d8d61d)
+     -![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/5cbe945b-4947-4135-bf9b-f88f81d8d61d)
   
-   - b.For Exact Split
+     - b.For Exact Split
        ```
           {
        "amount": 4299,
@@ -102,7 +102,7 @@ Daily Expense Sharing Application
        ]
    }
        ```
-  - ![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/cb740cd3-e606-405c-8dec-4515686a77f2)
+     - ![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/cb740cd3-e606-405c-8dec-4515686a77f2)
 
   
 
