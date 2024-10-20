@@ -144,5 +144,5 @@ Daily Expense Sharing Application
 
 
 ## I am also posting the Postman Collection here where i tested all the API Enpoints:
-https://www.postman.com/abhigawande123/workspace/remote-bricks-apis/collection/36164059-d97f0850-f40b-4490-abae-0d8594ec5d97?action=share&creator=36164059
+https://www.postman.com/abhigawande123/workspace/convin/collection/36164059-b00fba34-3f3d-4d1e-b194-7f689ef1d507?action=share&creator=36164059
 
