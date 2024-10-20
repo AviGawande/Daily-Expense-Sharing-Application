@@ -74,7 +74,7 @@ Daily Expense Sharing Application
      - URL: `http://localhost:5000/expenses`
      - a. For Equal Split: 
        ```
-            {
+       {
        "amount": 3000,
        "description": "Dinner",
        "payer_id": "<user_id>",
@@ -84,13 +84,13 @@ Daily Expense Sharing Application
            {"user_id": "<user_id2>"},
            {"user_id": "<user_id3>"}
        ]
-   }
+       }
        ```
      -![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/5cbe945b-4947-4135-bf9b-f88f81d8d61d)
   
-     - b.For Exact Split
+     - b.For Exact Split:
        ```
-          {
+       {
        "amount": 4299,
        "description": "Shopping",
        "payer_id": "<user_id>",
@@ -100,29 +100,34 @@ Daily Expense Sharing Application
            {"user_id": "<user_id2>", "amount": 2000},
            {"user_id": "<user_id3>", "amount": 1500}
        ]
-   }
+       }
        ```
      - ![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/cb740cd3-e606-405c-8dec-4515686a77f2)
 
-  
-
-   
- 
-   - 4.Upload an Assignment (as a user):
-     - Method: POST
-     - URL: `http://localhost:8000/upload`
-     - Auth:
-         - Use "Basic Auth" (enter `testuser` and `testpassword`).
-     - Body: Select "Raw" and then "JSON" from the dropdown in the Body tab:
+     - c. For Percentage Split:
        ```
-       {
-          "task": "Complete Python assignment",
-           "admin_username": "testadmin"
+          {
+       "amount": 1000,
+       "description": "Party",
+       "payer_id": "<user_id>",
+       "split_method": "percentage",
+       "splits": [
+           {"user_id": "<user_id1>", "percentage": 50},
+           {"user_id": "<user_id2>", "percentage": 25},
+           {"user_id": "<user_id3>", "percentage": 25}
+       ]
         }
        ```
+     - 
+
+  
+   - 4.Retrieve Individual User Expenses :
+     - Method: GET
+     - URL: `http://localhost:5000/expenses/user/<user_id>`
+     - (Replace <user_id> with an actual user ID)
      - ![Screenshot 2024-10-09 215032](https://github.com/user-attachments/assets/603c9518-dc84-4cf1-8282-e055baaf5d59)
   
-   - 5.Get All Admins:
+   - 5.Retrieve Overall Expenses :
      - Method: GET
      - URL: `http://localhost:8000/admins`
      - **No Authentication**: This is a public endpoint. You can simply send the request without any authentication.
