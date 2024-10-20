@@ -10,7 +10,7 @@ Daily Expense Sharing Application
 
 - 2.Language and Framework:
    - Python
-   - FastAPI
+   - Flask
 
 - 3.Testing:
    - Used Postman for Testing Client URls.
