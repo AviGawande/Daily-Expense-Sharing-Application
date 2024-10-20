@@ -17,13 +17,14 @@ Daily Expense Sharing Application
 
 ### API Endpoints:
    - 1.User Endpoint.
-      - a. Create User(POST).
-      - b. Retrieve User Details(GET).
+      - Create User(POST).
+      - Retrieve User Details(GET).
+        
    - 2.Expense Endpoint.
-      - a. Add Expense(POST)
-      - b. Retrieve Individual User Expenses(GET).
-      - c. Retrieve Overall Expenses(GET).
-      - d. Download Balance Sheet(GET).
+      - Add Expense(POST)
+      - Retrieve Individual User Expenses(GET).
+      - Retrieve Overall Expenses(GET).
+      - Download Balance Sheet(GET).
  
 ## How to SetUp this project locally and Test the Results:
 
