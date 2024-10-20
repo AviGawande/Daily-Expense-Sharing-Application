@@ -9,11 +9,11 @@ Daily Expense Sharing Application
    - Flask
 
 - 2.Database:
-   - Use MongoDB as your database.
+   - MongoDB .
    - MongoDB Compass
 
 - 3.Testing:
-   - Used Postman for Testing Client URls.
+   - Used Postman for Testing Client URLs.
 
 ### API Endpoints:
    - 1.User Endpoint.
@@ -28,7 +28,7 @@ Daily Expense Sharing Application
 ## How to SetUp this project locally and Test the Results:
 
 - 1.Fork/Clone this repo:
-   - `git clone https://github.com/AviGawande/GrowthX-Backend`
+   - `git clone https://github.com/AviGawande/Daily-Expense-Sharing-Application`
 - 2.In the same directory create a virtual environment(venv):
    - Install dependencies if not. `pip install virtualenv`
    - Create a new Virtual.Env name myenv. `python -m venv myenv`
