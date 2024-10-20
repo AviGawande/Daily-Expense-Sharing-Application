@@ -47,23 +47,25 @@ Daily Expense Sharing Application
   # Results:
   I have attached the snapshots of the each enpoint working successfully along with Postman Urls each.
 
-  - 1.Register a New User:
+  - 1.Create User:
      - Method: POST
-     - URL: `http://localhost:8000/register`
+     - URL: `http://localhost:5000/users`
      - Body: Select "Raw" and then "JSON" from the dropdown in the Body tab:
        ```
        {
-       "username": "testuser",
-       "password": "testpassword",
-       "user_type": "user"
+       "email": "abhishek123@gmail.com",
+       "name": "Abhishek Gawande",
+       "mobile": "1111122222"
        }
+       
        ```
-     - ![Screenshot 2024-10-09 213906](https://github.com/user-attachments/assets/e76c5bb0-6b36-4521-b459-0c228ce042e9)
+     - ![Screenshot 2024-10-20 160411](https://github.com/user-attachments/assets/0b6fa4c4-2d3f-4cf4-ae36-b1fa9e40e296)
+
    
-   - 2.Register a New Admin:
-     - Method: POST
-     - URL: `http://localhost:8000/register`
-     - Body: Select "Raw" and then "JSON" from the dropdown in the Body tab:
+   - 2.Retrieve User Details:
+     - Method: GET
+     - URL: `http://localhost:5000/users/<user_id>`
+   (Replace <user_id> with the ID returned when creating a user)--> Connect the backend-app with database(MongoDB) to get the IDs.
        ```
        {
        "username": "testadmin",
