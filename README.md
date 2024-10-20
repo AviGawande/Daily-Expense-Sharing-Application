@@ -1,28 +1,29 @@
-### This is the Backend Intern - Assignment for the Role of Backend Intern at Convin.ai
+### This is the Backend Intern - Assignment for Backend Intern at Convin.ai
 
 ## Objective:
 Daily Expense Sharing Application
 
 ### Technology Used:
-- 1.Database:
-   - Use MongoDB as your database.
-   - MongoDB Compass
-
-- 2.Language and Framework:
+- 1.Language and Framework:
    - Python
    - Flask
+
+- 2.Database:
+   - Use MongoDB as your database.
+   - MongoDB Compass
 
 - 3.Testing:
    - Used Postman for Testing Client URls.
 
 ### API Endpoints:
    - 1.User Endpoint.
-      - a. Register and log in.
-      - b. Upload assignments.
+      - a. Create User(POST).
+      - b. Retrieve User Details(GET).
    - 2.Expense Endpoint.
-      - a. Register and log in.
-      - b. View assignments tagged to them.
-      - c. Accept or reject assignments.
+      - a. Add Expense(POST)
+      - b. Retrieve Individual User Expenses(GET).
+      - c. Retrieve Overall Expenses(GET).
+      - d. Download Balance Sheet(GET).
  
 ## How to SetUp this project locally and Test the Results:
 
