@@ -74,7 +74,7 @@ Daily Expense Sharing Application
      - URL: `http://localhost:5000/expenses`
      - a.For Equal Split: 
        ```
-         {
+            {
        "amount": 3000,
        "description": "Dinner",
        "payer_id": "<user_id>",
@@ -84,13 +84,13 @@ Daily Expense Sharing Application
            {"user_id": "<user_id2>"},
            {"user_id": "<user_id3>"}
        ]
-      }
+   }
        ```
    -![Screenshot 2024-10-20 182133](https://github.com/user-attachments/assets/5cbe945b-4947-4135-bf9b-f88f81d8d61d)
   
    - b.For Exact Split
        ```
-            {
+          {
        "amount": 4299,
        "description": "Shopping",
        "payer_id": "<user_id>",
