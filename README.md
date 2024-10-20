@@ -15,11 +15,11 @@ Daily Expense Sharing Application
 - 3.Testing:
    - Used Postman for Testing Client URls.
 
-### Type of Users:
-   - 1.Users.
+### API Endpoints:
+   - 1.User Endpoint.
       - a. Register and log in.
       - b. Upload assignments.
-   - 2.Admin.
+   - 2.Expense Endpoint.
       - a. Register and log in.
       - b. View assignments tagged to them.
       - c. Accept or reject assignments.
