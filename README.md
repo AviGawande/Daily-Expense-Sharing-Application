@@ -45,7 +45,7 @@ Daily Expense Sharing Application
 
 
   # Results:
-  I have attached the snapshots of the each enpoint working successfully along with Postman Urls each.
+  I have attached the snapshots of the each enpoint working successfully along with Collection of Postman URLs.
 
   - 1.Create User:
      - Method: POST
